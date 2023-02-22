@@ -1,131 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sunggyeol Oh</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: #666;
-        }
-
-        h2 {
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            color: #666;
-        }
-
-        p {
-            line-height: 1.5;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #666;
-            color: white;
-        }
-
-        .resume-link {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .resume-link a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            margin-right: 20px;
-        }
-
-        .resume-link a:hover {
-            background-color: #666;
-            color: white;
-        }
-
-        .github-link a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .github-link a:hover {
-            background-color: #666;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sunggyeol Oh</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Sunggyeol Oh</h1>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
-                <div class="github-link"><a href="https://github.com/ohsunggyeol">GitHub</a></div>
-                <div class="resume-link"><a href="https://drive.google.com/file/d/1L3S71GXH
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">
+        <a href="#">Sunggyeol Oh</a>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1L3S71GXHegyUaAQ5ZpTSkr47EBlyWdYL/view?usp=sharing" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/ohsunggyeol" target="_blank">GitHub</a></li>
+      </ul>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>Welcome to my website</h1>
+    <p>I'm Sunggyeol Oh, a frontend web developer based in Seoul, South Korea.</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </section>
+
+  <section class="about container" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Sunggyeol Oh, a frontend web developer based in Seoul, South Korea. I have experience in developing responsive and accessible websites using HTML, CSS, and JavaScript. I'm passionate about creating intuitive and visually appealing user interfaces and have a keen eye for detail.</p>
+  </section>
+
+  <section class="experience container" id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Web Developer</h3>
+        <h4>ABC Company</h4>
+        <p class="timeline__date">Oct 2019 - Present</p>
+        <p>Developed and maintained multiple websites using HTML, CSS, and JavaScript. Collaborated with cross-functional teams to ensure timely and high-quality project delivery. Conducted code reviews and implemented best practices to ensure code quality and maintainability.</p>
+      </li>
+      <li>
+        <h3>Frontend Developer</h3>
+        <h4>XYZ Agency</h4>
+        <p class="timeline__date">Jan 2018 - Sep 2019</p>
+        <p>Worked on various web development projects for clients in the healthcare, finance, and education sectors. Developed responsive and accessible websites using HTML, CSS, and JavaScript. Conducted user research and usability testing to ensure optimal user experience.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="work container" id="work">
+    <h2>Work</h
